@@ -1,0 +1,116 @@
+h1 {
+    font-size: large;
+}
+
+html {
+    background-color: #121213;
+    color: white;
+}
+
+.winAnimation {
+    animation: colorChangeWin 3s forwards;
+}
+
+.loseAnimation {
+    animation: colorChangeLose 3s forwards;
+}
+
+#input {
+    line-height: 12px;
+    width: 100px;
+    
+}
+
+.correct, .found, .wrong, .unguessed {
+   
+    font-size: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    width: 10%;
+    margin: 0 auto;
+
+}
+
+.correct {
+    background-color: #538d4e;
+}
+
+.found {
+    background-color: #b59f3b;
+}
+
+.wrong {
+    background-color: #3a3a3c;
+}
+
+.unguessed {
+    background-color: #d3d6da;
+}
+
+.row {
+    display: flex;
+    height: fit-content;
+}
+
+#keyboard {
+    position: fixed;
+    bottom: 0;
+}
+
+
+#keyboard, #gameboard{
+    width: 100%;
+    margin: 0;
+    display: block;
+    font-size: 12px;
+}
+
+
+#info, #stats {
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px;
+    font-size: 12px;
+    overflow-wrap: normal;
+    display: none; 
+}
+
+#welcome {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    font-size: 12px;
+    overflow-wrap: normal;
+}
+
+@media only screen and (min-height: 600px) {
+    #keyboard, #gameboard, #info, #welcome, #stats{
+      font-size: 24px;
+    }
+    
+    input {
+        line-height: 24px;
+        font-size: 24px;
+    }
+}
+
+@media only screen and (min-height: 960px) {
+    #keyboard, #gameboard, #info, #welcome, #stats{
+        font-size: 48px;
+    }
+    input {
+        line-height: 48px;
+        font-size: 48px;
+    }
+}
+
+@keyframes colorChangeWin {
+    from {background-color: #121213;}
+    to {background-color: #1d4419;}
+}
+
+@keyframes colorChangeLose {
+    from {background-color: #121213;}
+    to {background-color: #6e4545;}
+}
+

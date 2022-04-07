@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wordle_28</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="styles.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+    </head>
+
+    <body>
+
+        <div id = "welcome">
+            <h1> Welcome to Wordle_28!</h1>
+            <button id = "start">Start</button>
+            <label>Debug mode?</label><input id="debug" type="checkbox" />
+            <h1 id="word"></h1>
+        </div>
+
+        <div id = "info">
+            <label>Guess:</label><input type="text" id="input" maxlength="5"/>
+            <button id="guess">Check</button>
+            <h1 id="update"></h1>
+        </div>
+
+        <div id="gameboard"></div>
+
+        <div id="keyboard">
+            <div id="row1"></div>
+            <div id="row2"></div>
+            <div id="row3"></div>
+        </div>
+
+    </body>
+    
+</html>
