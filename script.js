@@ -58,6 +58,12 @@ class Letter
         this.state = state;
         document.getElementById(this.char).className = state;
     }
+    
+    // used in onclick of the keyboard elements to write letter to input box
+    write_to_input()
+    {
+        document.getElementById("input").value = document.getElementById("input").value + this.char;
+    }
 
 
 }
